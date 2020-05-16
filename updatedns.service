@@ -1,0 +1,9 @@
+[Unit]
+Description=Update ClouDNS
+After=network.target
+
+[Service]
+ExecStart=/usr/local/sbin/update_cloudns.py
+
+[Install]
+WantedBy=multi-user.target
